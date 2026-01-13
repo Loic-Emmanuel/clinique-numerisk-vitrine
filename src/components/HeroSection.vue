@@ -1,6 +1,6 @@
 <template>
-  <section class="bg-gradient-to-r from-primaryOrange to-primaryPurple text-white
-         min-h-screen pt-24 md:pt-32
+  <section class="bg-gradient-to-r from-primaryOrange to-primaryPurple text-white pt-24 md:pt-32
+         min-h-screen 
          flex flex-col md:flex-row items-center justify-center px-6">
     <!-- Texte -->
     <div class="md:w-1/2 text-center md:text-left" data-aos="fade-right">

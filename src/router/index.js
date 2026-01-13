@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
+import Offres from '../views/Offres.vue'
 
 const router = createRouter({
   history: createWebHistory(),
@@ -9,11 +10,11 @@ const router = createRouter({
       name: 'home',
       component: Home,
     },
-    // {
-    //   path: '/about',
-    //   name: 'About',
-    //   component: () => import('../views/About.vue')
-    // }
+    {
+      path: '/offres',
+      name: 'offres',
+      component: Offres
+    }
   ],
   scrollBehavior(to, from, savedPosition) {
     if (to.hash) {

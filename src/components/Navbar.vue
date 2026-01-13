@@ -24,12 +24,31 @@
 
       <!-- Liens desktop -->
       <div class="hidden md:flex gap-6 text-gray-700 font-semibold">
-        <router-link to="/" class="hover:text-primaryOrange transition">Accueil</router-link>
-        <a href="#problems" class="hover:text-primaryOrange transition">Problèmes</a>
-        <a href="#solutions" class="hover:text-primaryOrange transition">Solutions</a>
-        <a href="#audience" class="hover:text-primaryOrange transition">Public</a>
-        <a href="#contact" class="hover:text-primaryOrange transition">Contact</a>
+        <router-link to="/" class="hover:text-primaryOrange transition">
+          Accueil
+        </router-link>
+
+        <router-link :to="{ path: '/', hash: '#problems' }" class="hover:text-primaryOrange transition">
+          Problèmes
+        </router-link>
+
+        <router-link :to="{ path: '/', hash: '#solutions' }" class="hover:text-primaryOrange transition">
+          Solutions
+        </router-link>
+
+        <router-link :to="{ path: '/', hash: '#audience' }" class="hover:text-primaryOrange transition">
+          Public
+        </router-link>
+
+        <router-link :to="{ path: '/', hash: '#contact' }" class="hover:text-primaryOrange transition">
+          Contact
+        </router-link>
+
+        <router-link :to="{ name: 'offres' }" class="hover:text-primaryOrange transition">
+          Nos offres
+        </router-link>
       </div>
+
 
       <!-- Bouton hamburger (mobile) -->
       <button @click="toggleMenu" class="md:hidden text-primaryPurple focus:outline-none">
@@ -56,6 +75,10 @@
       <a @click="closeMenu" href="#contact" class="block font-semibold text-gray-700 hover:text-primaryOrange">
         Contact
       </a>
+      <router-link @click="closeMenu" :to="{ name: 'offres' }"
+        class="block font-semibold text-gray-700 hover:text-primaryOrange">
+        Nos offres
+      </router-link>
     </div>
   </nav>
 </template>

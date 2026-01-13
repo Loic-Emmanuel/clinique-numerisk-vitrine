@@ -13,7 +13,7 @@
 
         <ul class="space-y-3 flex-1">
             <li v-for="(feature, index) in features" :key="index" class="flex gap-2">
-                <span class="text-green-600 font-bold">✔</span>
+                <CheckIcon class="h-6 w-6 text-green-600 flex-shrink-0" />
                 <span>{{ feature }}</span>
             </li>
         </ul>
@@ -26,6 +26,7 @@
 </template>
 
 <script setup>
+import { CheckIcon } from '@heroicons/vue/24/solid'
 defineProps({
     title: String,
     subtitle: String,

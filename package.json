@@ -16,6 +16,8 @@
   "dependencies": {
     "@heroicons/vue": "^2.2.0",
     "aos": "^2.3.4",
+    "axios": "^1.13.2",
+    "sweetalert2": "^11.26.17",
     "vue": "^3.5.26",
     "vue-router": "^4.6.4"
   },

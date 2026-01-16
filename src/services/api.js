@@ -19,7 +19,6 @@ apiClient.interceptors.response.use(
     console.error('Erreur API:', error);
     
     if (!error.response) {
-      // Pas de réponse du serveur
       console.error('Serveur injoignable');
     }
     
